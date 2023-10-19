@@ -1,0 +1,9 @@
+#Declara como y desde donde se va iniciar el contenedor
+services:
+  app-csv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      #Reload de mis archivos al contenedor
+    volumes:
+      - .:/app

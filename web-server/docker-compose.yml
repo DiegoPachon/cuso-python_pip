@@ -1,0 +1,11 @@
+#Declara como y desde donde se va iniciar el contenedor
+services:
+  web-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      #Reload de mis archivos al contenedor
+    volumes:
+      - .:/app
+    ports:
+      - '80:80'

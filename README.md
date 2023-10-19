@@ -24,8 +24,18 @@ Para correr app debes seguir las siguientes instrucciones en la terminal:
 ```sh
 git clone
 cd app
-python -m venv env
-source env/bin/activate
+.\env\Scripts\Activate
+pip install -r requirements.txt
+python main.py
+```
+
+Para correr Web-server debes seguir las siguientes instrucciones en la terminal:
+# Web-server Project
+
+```sh
+git clone
+cd app
+.\env\Scripts\Activate
 pip install -r requirements.txt
 python main.py
 ```
